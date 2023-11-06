@@ -1,0 +1,280 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="allstyle.css">
+    <script src="addtocart.js" type="text/javascript"></script>
+    <title>Menu-Jumpstart Coffee Shop</title>
+    <link rel="icon" href="favigation.png">
+</head>
+<body>
+    <header>
+        <a href="coffee_shop.html">
+            <img class="logo" src="logo latest.png" width="130px" height="130px" alt="logo">
+        </a>
+        </header>
+    <div class="bar">
+        <nav>
+        
+            <ul>
+                <li><a class="cart" href="addto_cart.html"><img class="carticon" src="cart icon.png" alt="Add to Cart">Cart</a> </li>
+                <li> <a href="customer_feedback.html">Feedback</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="menu.html"class="active">Menu</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="coffee_shop.html">Home</a></li>
+                <li><h1 style="font-size:15px;text-align:center;"><b>JUMPSTART COFFEE SHOP</b></h1></li>
+            </ul>
+        </nav>
+    </div>
+    
+        <article class="a1">
+
+                <div class="vertical-menu">
+                     <a style="background-color:#e0e6ef" href="menu.html" class="menu">Food and Drinks</a>
+                     <a style="background-color:#e0e6ef" href="drinks.html" class="drinks">Drinks</a>
+                     <a style="background-color:#e0e6ef" href="jumpstart_signature.html" class="classic">Jumpstart Signature</a>
+                     <a style="background-color:#e0e6ef" href="jumpstartfrappe.html" class="classic">Jumpstart Frappé</a>
+                     <a style="background-color:#e0e6ef" href="coffee.html" class="classic">Coffee</a>
+                     <a style="background-color:#e0e6ef" href="chocolate.html" class="classic">Chocolate</a>
+                     <a style="background-color:#e0e6ef" href="refresher.html"class="classic" >Refresher</a>
+                     <a style="background-color:#e0e6ef" href="limited_edition.html" class="classic">Limited Edition</a>
+                     <a style="background-color:#e0e6ef" href="food.html" class="food">Food</a>
+                     <a style="background-color:#e0e6ef" href="cakes.html" class="classic">Cakes</a>
+                     <a style="background-color:#e0e6ef" href="pastries.html" class="classic">Pastries</a>
+
+                 </div>
+
+            <div class="drinks_layout">
+                
+               
+
+        
+            <div class="drink_coconut">
+                <button onclick="myFunction('f')" class="img_b" ><img class="cf" src="menu/coconut Frappé.png" alt="Coconut Frappé"></button>
+                <h3>Coconut Frappé<br><br></h3>
+                <p>Frappé Series <img  style="width:20px;height:20px;" src="menu-cold.png"></p>
+                <h4>RM13.00</h4>
+                <div id="f" class="box">
+                    <div  class="description">
+                    <button onclick="myFunction('f')" class="X">&#10006;</button>
+                    <img class="des_menu" src="menu/coconut Frappé.png" alt="Coconut Frappé">
+                    <h1 style="text-align:center">JUMPSTART COCONUT FRAPPE</h1>
+                    
+                    <div class="p">
+                    <p style="text-align:justify;display:block;margin:20px;">The mixture of fresh santan and milk has been blended. For the finishing touch we added a whip of coconut cream to produce a tasty, foamy, and refreshing drink. </p>
+                    </div> 
+
+                   <div class="ingredients">
+                    <h4 style="text-align:left">Ingredients</h4>
+                    <ul>
+                        <li style="color:black"><strong>Fresh Milk</strong></li>
+                        <li style="color:black"><strong>Santan</strong></li>
+                        <li style="color:black"><strong>Coconut Cream</strong></li>
+                    </ul>
+                   </div>
+
+                   <div class="kcal">
+                   <h4>Kcal</h4>
+                   <ul>
+                    <li style="color:black"><strong>Iced- 511</strong></li>
+                    
+                   </ul>
+                   </div>
+                   <form class="choose1">
+                   <input type="radio" id="ch" name="cold_hot" value="Iced">
+                   <label for="ch">Iced</label>
+                   </form> 
+                   <h4 class="price1">RM 13.00</h4>
+                   <button class="d_atc1" type="button" class="cart" onclick="addtocart()">Add To Cart</button>
+
+
+
+                </div>
+                <script>
+                    function myFunction(menu) {
+                        var x = document.getElementById(menu);
+                        if(x.style.display === "none"){
+                            x.style.display ="block";
+                        }else{
+                            x.style.display = "none";
+                        }
+                    }
+
+                </script>
+            </div>
+            </div>
+
+            <div class="drink_frapeccino">
+                <button onclick="myFunction('g')" class="img_b"> <img class="f" src="menu/frapeccino menu.png" alt="Frapeccino"></button>
+                <h3>Frapeccino<br><br></h3>
+                <p>Frappé Series<img style="width:20px;height:20px;" src="menu-cold.png"></p>
+                <h4>RM13.00</h4>
+                <div id="g" class="box">
+                    <div  class="description">
+                    <button onclick="myFunction('g')" class="X">&#10006;</button>
+                    <img class="des_menu" src="menu/frapeccino menu.png" alt="Frapeccino">
+                    <h1 style="text-align:center">JUMPSTART FRAPECCINO</h1>
+                    
+                    <div class="p">
+                    <p style="text-align:justify;display:block;margin:20px;">A classic coffee frappe is ready to serve! A double shot of espresso is blended with frothed milk with a big dollop of whipped cream on top! This beverage is perfect for the serious coffee drinker that is looking for a little fun!
+                    </p>
+                    </div> 
+
+                   <div class="ingredients">
+                    <h4 style="text-align:left">Ingredients</h4>
+                    <ul>
+                        <li style="color:black"><strong>Espresso</strong></li>
+                        <li style="color:black"><strong>Fresh Milk</strong></li>
+                        <li style="color:black"><strong>Vanilla Syrup</strong></li>
+                    </ul>
+                   </div>
+
+                   <div class="kcal">
+                   <h4>Kcal</h4>
+                   <ul>
+                    <li style="color:black"><strong>Iced- 265</strong></li>
+                    
+                   </ul>
+                   </div>
+                   <form class="choose1">
+                   <input type="radio" id="ch" name="cold_hot" value="Iced">
+                   <label for="ch">Iced</label>
+                   </form> 
+                   <h4 class="price1">RM 13.00</h4>
+                   <button class="d_atc1" type="button" class="cart" onclick="addtocart()">Add To Cart</button>
+
+
+
+                </div>
+                <script>
+                    function myFunction(menu) {
+                        var x = document.getElementById(menu);
+                        if(x.style.display === "none"){
+                            x.style.display ="block";
+                        }else{
+                            x.style.display = "none";
+                        }
+                    }
+
+                </script>
+            </div>
+            </div>
+
+
+
+            <div class="drink_cfrappe">
+                <button onclick="myFunction('n')" class="img_b" ><img class="cf" src="menu/signature chocolate Frappé.png" alt="Signature Chocolate Frappé"></button>
+                <h3>Signature Chocolate <br>Frappé</h3>
+                <p>Frappé Series <img style="width:20px;height:20px;" src="menu-cold.png"></p>
+                <h4>RM13.00</h4>
+                <div id="n" class="box">
+                    <div  class="description">
+                    <button onclick="myFunction('n')" class="X">&#10006;</button>
+                    <img class="des_menu" src="menu/signature chocolate Frappé.png" alt="Signature Chocolate Frappé">
+                    <h1 style="text-align:center">JUMPSTART SIGNATURE CHOCOLATE FRAPPE</h1>
+                    
+                    <div class="p">
+                    <p style="text-align:justify;display:block;margin:20px;">Jumpstart’s signature chocolate frappe serves you the rich flavour of chocolate and a whip of creamy cream at the top with shredded chocolate.
+                    </p>
+                    </div> 
+
+                   <div class="ingredients">
+                    <h4 style="text-align:left">Ingredients</h4>
+                    <ul>
+                        <li style="color:black"><strong>Chocolate Syrup</strong></li>
+                        <li style="color:black"><strong>Whipped Cream</strong></li>
+                        <li style="color:black"><strong>Chocolate</strong></li>
+                    </ul>
+                   </div>
+
+                   <div class="kcal">
+                   <h4>Kcal</h4>
+                   <ul>
+                    <li style="color:black"><strong>Iced- 578</strong></li>
+                    
+                   </ul>
+                   </div>
+                   <form class="choose1">
+                   <input type="radio" id="ch" name="cold_hot" value="Iced">
+                   <label for="ch">Iced</label>
+                   </form> 
+                   <h4 class="price1">RM 13.00</h4>
+                   <button class="d_atc1" type="button" class="cart" onclick="addtocart()">Add To Cart</button>
+
+
+
+                </div>
+                <script>
+                    function myFunction(menu) {
+                        var x = document.getElementById(menu);
+                        if(x.style.display === "none"){
+                            x.style.display ="block";
+                        }else{
+                            x.style.display = "none";
+                        }
+                    }
+
+                </script>
+            </div>
+            </div>
+       
+        </div>
+            </article>
+        </div>
+
+        </article>
+        <footer>
+        
+            <div class="footer">
+                <div class="footer-left">
+                    <img src="logo circle.png" alt="Jumpstart Coffee Shop">
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Jumpstart Coffee Shop</h3>
+                    <p class="footer-links">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="coffee_shop.html">Home</a>
+                    |
+                    <a href="about_us.html">About Us</a>
+                    |
+                    <a>Contact</a>
+                    |
+                    <a href="faq.html">FAQ</a>
+                </p>
+    
+                <p class="footer-copyright">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright 2022 <strong>Jumpstart Coffee Shop</strong> all rights reserved</p>
+    
+                </div>
+                <div class="footer-center">
+                    <p class="footer-cafe-about">
+                      <span >About the Coffee Shop</span><br><br>
+                      <strong>Jumpstart Coffee </strong>uses the premium quality ingredients to serve our customers the best coffee. All of our coffees and 
+                      syrups are made with all natural ingredients with no chemicals or preservatives ensuring you the highest quality in taste and health. 
+                      JUMPSTART also provides paper straws and eco-friendly cups that are reusable. We love to share a positive impact with our customers.
+                    </p>
+                  </div>
+      
+    
+                <div class="footer-right">
+                    <h3>Quick Links</h3>
+                    <p>
+                        <h4>Contact</h4>
+                        <a href="mailto:jumpstartcoffeeshop22@gmail.com">Email : jumpstartcoffeeshop22@gmail.com</a><br><br>
+                        <a href="menu.html">Menu</a><br><br>
+                        <a href="product_delivery.html">Product Delivery</a><br><br>
+                        <a href="membership.html">Membership</a><br><br>
+                        <a href="customer_feedback.html">Feedback</a>
+                        <h3>Address</h3>
+                        <address>A-G-15, DATARAN, 1, Jalan PU 20/1, <br>Taman Puchong Utama, 47140 Puchong, Selangor</address>
+                    </p>
+                </div>
+    
+            
+            </div>
+    
+            
+        </footer>
+</body>
+</html>

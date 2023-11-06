@@ -1,0 +1,39 @@
+div#faqhalal{
+    text-align: center;
+    color: #2e3a7a;
+}
+
+div#faqvegan{
+    text-align: center;
+    color: #2e3a7a;
+}
+
+div#faqingredients{
+    text-align: center;
+    color: #2e3a7a;
+}
+
+img#beverages{
+    width: 200px;
+    height: 300px;
+}
+
+img#halal{
+    width: 100px;
+    height: 100px;
+}
+
+img#ingredients{
+    width: 150px;
+    height: 150px;
+}
+
+header, footer{
+    background-color: white;
+}
+
+body {
+    background-color: white;
+    
+}
+

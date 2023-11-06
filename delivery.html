@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Delivery</title>
+    <link href="allstyle.css" rel="stylesheet"/>
+    <link href="delivery.css" rel="stylesheet"/>
+    <script src="delivery.js"></script>
+</head>
+<body>
+    <header >
+        <a href="home_page.html">
+            <img class="logo" src="logo latest.png" width="130px" height="130px" alt="logo">
+        </a>
+        <div class="bar">
+            <nav>
+                <ul>
+                    <li><a class="active" href="addto_cart.html"><img class="carticon" src="cart icon.png" alt="Add to Cart">Cart</a> </li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="coffee_shop.html">Home</a></li>
+                    <li><h1 style="font-size:15px;text-align:center;"><b>JUMPSTART COFFEE SHOP</b></h1></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    
+        <div class="title">
+            <p style="font-size: 40px; height: 20px;" >Product Delivery</p>
+            <p style="font-size: 20px;">You may order through the website by filling in your address and phone number or by calling this number (+60128462849).</p>
+         </div>
+
+    <form action="/payment.html">
+        <div class="service">
+            <p style="font-size: 20px; font-weight: 600;">Choose your service.</p>
+                <input type="radio" id="delivery" name="service" value="Delivery" checked>
+                    <label for="delivery">Delivery</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                <input type="radio" id="pickup" name="service" value="Pickup">
+                    <label for="pickup">Pick up</label><br><br>
+        
+                <label for="fname">First name </label>
+                    <input type="text" id="fname" name="fname" required>&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                <label for="lname">Last name  </label>
+                    <input type="text" id="lname" name="lname" required><br><br>
+                
+                <img src="phone.png">
+                    <input type="custPhone" id="phonenum" name="Phonenum" required placeholder="(nnn)nnn-nnnn"pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/><br><br><br>
+        </div>
+
+        <fieldset id="deliveryInfo">
+            <legend>Delivery Options</legend>
+                <textarea name="delAddress" id="addressBox" rows="4" cols="50" placeholder="Enter delivery address" required></textarea>
+                    <div>   
+                        <br><label for="delBox" >Delivery Time (leave blank for earliest delivery)</label>
+                        <input name="delTime" id="delBox" type="time"/>
+                    </div>
+        </fieldset><br><br>   
+
+        <fieldset id="pickupinfo">
+            <legend >Pickup Options</legend>
+                    <label>Pickup Time (leave a blank for earliest pickup</label>
+                        <input name="pickupTime" id="pickupBox" type="time" disabled/>
+        </fieldset><br>     
+        <input type="submit" value="Confirm your order"/>
+        
+    </form><br><br>
+
+    <article style="height: px;"></article>
+    
+    <footer>
+        
+        <div class="footer">
+            <div class="footer-left">
+                <img src="logo circle.png" alt="Jumpstart Coffee Shop">
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Jumpstart Coffee Shop</h3>
+                <p class="footer-links">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="coffee_shop.html">Home</a>
+                |
+                <a href="about_us.html">About Us</a>
+                |
+                <a>Contact</a>
+                |
+                <a href="faq.html">FAQ</a>
+            </p>
+
+            <p class="footer-copyright">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright 2022 <strong>Jumpstart Coffee Shop</strong> all rights reserved</p>
+
+            </div>
+            <div class="footer-center">
+                <p class="footer-cafe-about">
+                  <span >About the Coffee Shop</span><br><br>
+                  <strong>Jumpstart Coffee </strong>uses the premium quality ingredients to serve our customers the best coffee. All of our coffees and 
+                  syrups are made with all natural ingredients with no chemicals or preservatives ensuring you the highest quality in taste and health. 
+                  JUMPSTART also provides paper straws and eco-friendly cups that are reusable. We love to share a positive impact with our customers.
+                </p>
+              </div>
+  
+
+            <div class="footer-right">
+                <h3>Quick Links</h3>
+                <p>
+                    <h4>Contact</h4>
+                    <a href="mailto:jumpstartcoffeeshop22@gmail.com">Email : jumpstartcoffeeshop22@gmail.com</a><br><br>
+                    <a href="menu.html">Menu</a><br><br>
+                    <a href="product_delivery.html">Product Delivery</a><br><br>
+                    <a href="membership.html">Membership</a><br><br>
+                    <a href="customer_feedback.html">Feedback</a>
+                    <h3>Address</h3>
+                    <address>A-G-15, DATARAN, 1, Jalan PU 20/1, <br>Taman Puchong Utama, 47140 Puchong, Selangor</address>
+                </p>
+            </div>
+
+        
+        </div>
+
+        
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="allstyle.css">
+    <script src="addtocart.js" type="text/javascript"></script>
+    <title>Menu-Jumpstart Coffee Shop</title>
+    <link rel="icon" href="favigation.png">
+</head>
+<body>
+    <header>
+        <a href="coffee_shop.html">
+            <img class="logo" src="logo latest.png" width="130px" height="130px" alt="logo">
+        </a>
+        </header>
+    <div class="bar">
+        <nav>
+        
+            <ul>
+                <li><a class="cart" href="addto_cart.html"><img class="carticon" src="cart icon.png" alt="Add to Cart">Cart</a> </li>
+                <li> <a href="customer_feedback.html">Feedback</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="menu.html"class="active">Menu</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="coffee_shop.html">Home</a></li>
+                <li><h1 style="font-size:15px;text-align:center;"><b>JUMPSTART COFFEE SHOP</b></h1></li>
+            </ul>
+        </nav>
+    </div>
+    
+        <article class="a1">
+
+                <div class="vertical-menu">
+                     <a style="background-color:#e0e6ef" href="menu.html" class="menu">Food and Drinks</a>
+                     <a style="background-color:#e0e6ef" href="drinks.html" class="drinks">Drinks</a>
+                     <a style="background-color:#e0e6ef" href="jumpstart_signature.html" class="classic">Jumpstart Signature</a>
+                     <a style="background-color:#e0e6ef" href="jumpstartfrappe.html" class="classic">Jumpstart Frappé</a>
+                     <a style="background-color:#e0e6ef" href="coffee.html" class="classic">Coffee</a>
+                     <a style="background-color:#e0e6ef" href="chocolate.html" class="classic">Chocolate</a>
+                     <a style="background-color:#e0e6ef" href="refresher.html"class="classic" >Refresher</a>
+                     <a style="background-color:#e0e6ef" href="limited_edition.html" class="classic">Limited Edition</a>
+                     <a style="background-color:#e0e6ef" href="food.html" class="food">Food</a>
+                     <a style="background-color:#e0e6ef" href="cakes.html" class="classic">Cakes</a>
+                     <a style="background-color:#e0e6ef" href="pastries.html" class="classic">Pastries</a>
+
+                 </div>
+
+            <div class="drinks_layout">
+
+            <div class="drink_hlatte">
+                <button onclick="myFunction('h')" class="img_b"> <img class="hl" src="menu/honey latte.png" alt="Honey Latte"></button>
+                <h3>Honey Latte<br><br></h3>
+                <p>Latte Series<img  style="width:20px;height:20px;" src="menu-cold.png"></p>
+                <h4>RM10.50</h4>
+                <div id="h" class="box">
+                    <div  class="description">
+                    <button onclick="myFunction('h')" class="X">&#10006;</button>
+                    <img class="des_menu" src="menu/honey latte.png" alt="Honey Latte">
+                    <h1 style="text-align:center">JUMPSTART HONEY LATTE</h1>
+                    <div class="p1">
+                    <p style="text-align:justify;display:block;margin:20px;">Enjoy a cup of smooth,creamy and sweet latte. A sweet sensation of honey is added to this latte. Toasted honey topping is a must that will be sprinkled on at the end.
+
+                    </p>
+                    </div> 
+
+                   <div class="ingredients">
+                    <h4 style="text-align:left">Ingredients</h4>
+                    <ul>
+                        <li style="color:black"><strong>Coffee</strong></li>
+                        <li style="color:black"><strong>Fresh Milk</strong></li>
+                        <li style="color:black"><strong>Honey</strong></li>
+                        <li style="color:black"><strong>vanilla Syrup</strong></li>
+                    </ul>
+                   </div>
+
+                   <div class="kcal">
+                   <h4>Kcal</h4>
+                   <ul>
+                    <li style="color:black"><strong>Iced- 310</strong></li>
+                   </ul>
+                   </div>
+                   <form class="choose2">
+                    <input type="radio" id="ch" name="cold_hot" value="Hot">
+                    <label for="ch">Hot</label>
+                    <input type="radio" id="ch" name="cold_hot" value="Iced">
+                   <label for="ch">Iced</label>
+                   </form> 
+                   <h4 class="price1">RM 10.50</h4>
+                   <button class="d_atc2" type="button" class="cart" onclick="addtocart()">Add To Cart</button>
+
+
+
+                </div>
+                <script>
+                    function myFunction(menu) {
+                        var x = document.getElementById(menu);
+                        if(x.style.display === "none"){
+                            x.style.display ="block";
+                        }else{
+                            x.style.display = "none";
+                        }
+                    }
+
+                </script>
+            </div>
+            </div>
+            
+            <div class="drink_hsamericano">
+                <button onclick="myFunction('i')" class="img_b"> <img class="hsa" src="menu/Honey Sparkling Americano.png" alt="Honey Sparkling Americano"></button>
+                <h3>Honey Sparkling <br>Americano</h3>
+                <p>Coffee Series <img  style="width:20px;height:20px;" src="menu-cold.png"></p>
+                <h4>RM12.00</h4>
+                <div id="i" class="box">
+                    <div  class="description">
+                    <button onclick="myFunction('i')" class="X">&#10006;</button>
+                    <img class="des_menu" src="menu/Honey Sparkling Americano.png" alt="Honey Sparkling Americano">
+                    <h1 style="text-align:center">JUMPSTART HONEY SPARKLING AMERICANO </h1>
+                    
+                    <div class="p1">
+                    <p style="text-align:justify;display:block;margin:20px;">A bottle of sparkling water with a splash of espresso produces a refreshing drink for hot days. To make it not as bitter we added a drizzle of local honey and a secret ingredient. Sweet, sour, bitter all in a cup!
+                    </p>
+                    </div> 
+
+                   <div class="ingredients">
+                    <h4 style="text-align:left">Ingredients</h4>
+                    <ul>
+                        <li style="color:black"><strong>Espresso</strong></li>
+                        <li style="color:black"><strong>Soda Water</strong></li>
+                        <li style="color:black"><strong>Honey</strong></li>
+                    </ul>
+                   </div>
+
+                   <div class="kcal">
+                   <h4>Kcal</h4>
+                   <ul>
+                    <li style="color:black"><strong>Iced- 156</strong></li>
+                   </ul>
+                   </div>
+                   <form class="choose3">
+                   <input type="radio" id="ch" name="cold_hot" value="Iced">
+                   <label for="ch">Iced</label>
+                   </form> 
+                   <h4 class="price3">RM 12.00</h4>
+                   <button class="d_atc2" type="button" class="cart" onclick="addtocart()">Add To Cart</button>
+
+
+
+                </div>
+                <script>
+                    function myFunction(menu) {
+                        var x = document.getElementById(menu);
+                        if(x.style.display === "none"){
+                            x.style.display ="block";
+                        }else{
+                            x.style.display = "none";
+                        }
+                    }
+
+                </script>
+            </div>
+            </div>
+
+       
+        </div>
+            </article>
+        </div>
+
+        </article>
+        <footer>
+        
+            <div class="footer">
+                <div class="footer-left">
+                    <img src="logo circle.png" alt="Jumpstart Coffee Shop">
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Jumpstart Coffee Shop</h3>
+                    <p class="footer-links">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="coffee_shop.html">Home</a>
+                    |
+                    <a href="about_us.html">About Us</a>
+                    |
+                    <a>Contact</a>
+                    |
+                    <a href="faq.html">FAQ</a>
+                </p>
+    
+                <p class="footer-copyright">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright 2022 <strong>Jumpstart Coffee Shop</strong> all rights reserved</p>
+    
+                </div>
+                <div class="footer-center">
+                    <p class="footer-cafe-about">
+                      <span >About the Coffee Shop</span><br><br>
+                      <strong>Jumpstart Coffee </strong>uses the premium quality ingredients to serve our customers the best coffee. All of our coffees and 
+                      syrups are made with all natural ingredients with no chemicals or preservatives ensuring you the highest quality in taste and health. 
+                      JUMPSTART also provides paper straws and eco-friendly cups that are reusable. We love to share a positive impact with our customers.
+                    </p>
+                  </div>
+      
+    
+                <div class="footer-right">
+                    <h3>Quick Links</h3>
+                    <p>
+                        <h4>Contact</h4>
+                        <a href="mailto:jumpstartcoffeeshop22@gmail.com">Email : jumpstartcoffeeshop22@gmail.com</a><br><br>
+                        <a href="menu.html">Menu</a><br><br>
+                        <a href="product_delivery.html">Product Delivery</a><br><br>
+                        <a href="membership.html">Membership</a><br><br>
+                        <a href="customer_feedback.html">Feedback</a>
+                        <h3>Address</h3>
+                        <address>A-G-15, DATARAN, 1, Jalan PU 20/1, <br>Taman Puchong Utama, 47140 Puchong, Selangor</address>
+                    </p>
+                </div>
+    
+            
+            </div>
+    
+            
+        </footer>
+</body>
+</html>

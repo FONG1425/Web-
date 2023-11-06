@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="addtocart.css">
+    <link rel="stylesheet" href="allstyle.css">
+    <title>Add to cart-JUMPSTART</title>
+    <link rel="icon" href="favigation.png">
+
+
+    <script type="text/javascript" defer></script>
+    <script type="text/javascript">
+    function display(obj,num)
+    {
+        var price = "Price" + num; //e.g. Price1 or Price2 or Price3
+        var qty = "Quantity" + num;  //e.g. Quantity1 or Quantity2 or Quantity3
+       var amount = "Amount" + num; //e.g. Amount1 or Amount2 or Amount 3
+        
+        if(obj.selectedIndex != 0)
+        {	
+            document.getElementById(price).value=obj.value; //e.g. 112.00
+            document.getElementById(qty).disabled = false; // unactivated disable
+            document.getElementById(qty).value = "0";  
+            document.getElementById(amount).value = "0.00";  
+            document.getElementById(qty).focus();
+            calculate();
+        } else if (obj.selectedIndex == 0) {
+            document.getElementById(price).value = "0.00";
+            document.getElementById(qty).value = "0";  
+            document.getElementById(amount).value = "0.00";
+        }
+        
+    }
+    
+    function sub(obj,num)
+    {
+        var amount = "Amount" + num;  //Amount1 or Amount2 or Amount 3
+        var price = "Price" + num;  //Price1 or Price2 or Price3
+        
+      
+        var qty = obj.selectedIndex; //index start from 0 
+       if (qty>0){
+            var subtotal = parseFloat(document.getElementById(price).value)*qty;
+            document.getElementById(amount).value = subtotal.toFixed(2);
+            calculate();
+       }
+       else {
+            var subtotal = parseFloat(0);
+            document.getElementById(amount).value = subtotal.toFixed(2);
+            calculate();
+       }
+    
+    }
+    
+    function calculate(){
+        
+        var amt1, amt2, amt3, amt4, amt5,amt6,amt7,amt8, amt9, total;	
+        amt1 = parseFloat(document.getElementById('Amount1').value);
+        amt2 = parseFloat(document.getElementById('Amount2').value);
+        amt3 = parseFloat(document.getElementById('Amount3').value); 
+        amt4 = parseFloat(document.getElementById('Amount4').value);
+        amt5 = parseFloat(document.getElementById('Amount5').value);
+        amt6 = parseFloat(document.getElementById('Amount6').value);
+        amt7 = parseFloat(document.getElementById('Amount7').value);
+        amt8 = parseFloat(document.getElementById('Amount8').value);
+    
+        total = amt1 + amt2 + amt3 + amt4 + amt5 + amt6 + amt7 + amt8;
+    
+        document.getElementById('totalAmount').value = total.toFixed(2);
+    }
+    
+    
+    function quantity(){
+        for(num=0; num<=3 ; num++)
+	{
+		document.write("<option>" + num + "</option>");
+	}
+        
+    }
+    
+    </script>
+</head>
+
+
+<body >
+
+    <header>
+        <a href="coffee_shop.html">
+            <img class="logo" src="logo latest.png" width="130px" height="130px" alt="logo">
+        </a>
+        </header>
+        <div class="bar">
+            <nav>  
+                <ul>
+                    <li><a class="active" href="addto_cart.html"><img class="carticon" src="cart icon.png" alt="Add to Cart">Cart</a> </li>
+                    <li><a href="customer_feedback.html">Feedback</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="coffee_shop.html">Home</a></li>
+                    <li><h1 style="font-size:15px;text-align:center;"><b>JUMPSTART COFFEE SHOP</b></h1></li>
+                </ul>
+            </nav>
+        </div>
+
+    <br/>
+
+    <div class="yourcart">
+        <p>YOUR CART</p>
+    </div>
+
+    <section class="cart">
+    
+        <div class="tablebig" >
+            <table class="table">
+                <thead class="thead" height="30">
+                    <tr>
+                        <th scope="col" class="text">PRODUCT SERIES</th>
+                        <th scope="col" class="text">PRICE (RM)</th>
+                        <th scope="col" class="text">QUANTITY</th>
+                        <th scope="col" class="text">TOTAL (RM)</th>
+                    </tr>
+                </thead>
+                <tbody class="tablebody">
+
+                    <!-- SIGNATURE -->
+                    
+                    <tr class="signature" height="90" >
+                        <td>SIGNATURE <br/> 
+                            <select id="desc1" name="desc1" onchange="display(this,1);">
+                            <option value="0.00">NONE </option>
+                            <option value="11.00">Black Sugar Latte</option>
+                            <option value="13.50">Signature Chocolate Frappe</option>
+                            <option value="11.50">Caramel Maccgiato</option>
+                        </select></td>
+
+                        <td> <input type="text" name="Price1" id="Price1" readonly size=1 /> </td>
+                        
+                        <td> 
+                            <select name="Quantity1"  id="Quantity1" onchange="sub(this,1);" disabled>
+                                <script type="text/javascript">
+                                    quantity();
+                                </script>
+                            </select>
+                        </td>
+
+                          <td> <input type="text" name="Amount1" id="Amount1" size=1 class=numbers  value="0.00"  onchange="calculate();" disabled  /></td>
+                    
+                    </tr>
+                    
+
+                    <!-- COFFEE -->
+                    <tr class="coffee" height="90">
+                        <td>COFFEE <br/>
+                            <select id="desc2" name="desc2" onchange="display(this,2);">
+                                <option value="0.00">NONE </option>
+                                <option value="7.50">Americano</option>
+                                <option value="9.50">Cappuccino</option>
+                                <option value="13.00">Mocha</option>
+                                <option value="10.00">Iced Latte</option>
+                                <option value="11.50">Matcha Latte</option>
+                            </select></td>
+
+                        <td> <input type="text" name="Price2" id="Price2" readonly size=1 /> </td>
+
+                         <td>  
+                            <select name="Quantity2"  id="Quantity2" onchange="sub(this,2);" disabled>
+                                <script type="text/javascript">
+                                    quantity();
+                                </script>
+                            </select>
+                         </td>
+                         
+                        <td> 
+                            <input type="text" name="Amount2" id="Amount2" size=1 class=numbers  value="0.00"  onchange="calculate();" disabled  /></td>
+                        
+                    </tr>
+
+                    <!-- FRAPPE -->
+                    <tr class="frappe" height="90">
+                        <td>FRAPPE <br/>
+                            <select id="desc3" name="desc3" onchange="display(this,3);">
+                                <option value="0.00">NONE </option>
+                                <option value="13.00">Frappucino</option>
+                                <option value="13.00">Coconut Frappe</option>
+                            </select>
+                        </td>
+
+                        <td> <input type="text" name="Price3" id="Price3" readonly size=1 /> </td>
+
+                        <td> <select name="Quantity3"  id="Quantity3" onchange="sub(this,3);" disabled>
+                            <script type="text/javascript">
+                                quantity();
+                            </script>
+                            </select> 
+                        </td>
+
+                        <td> <input type="text" name="Amount3" id="Amount3" size=1 class=numbers  value="0.00"  onchange="calculate();" disabled  /> </td>
+                    </tr>
+
+                    <!--CHOCO-->
+                    <tr class="choco" height="90">
+                        <td>CHOCOLATE <br/>
+                            <select id="desc4" name="desc4" onchange="display(this,4);">
+                                <option value="0.00">NONE </option>
+                                <option value="11.00">Chocolate</option>
+                                <option value="13.00">Roasted Hazelnut Chocolate</option>
+                            </select>
+                        </td>
+
+                        <td> <input type="text" name="Price4" id="Price4" readonly size=1 /> </td>
+
+                        <td> <select name="Quantity4"  id="Quantity4" onchange="sub(this,4);" disabled>
+                            <script type="text/javascript">
+                                quantity();
+                            </script>
+                            </select>  
+                        </td>
+
+                        <td> <input type="text" name="Amount4" id="Amount4" size=1 class=numbers  value="0.00"  onchange="calculate();" disabled  /> </td>
+                    </tr>
+
+                    <!--REFESHER-->
+                    <tr class="refesher" height="90 ">
+                        <td>REFRESHER <br/>
+                            <select id="desc5" name="desc5" onchange="display(this,5);">
+                                <option value="0.00">NONE </option>
+                                <option value="11.00">Mango Smoothie</option>
+                                </select>
+                        </td>
+
+                        <td> <input type="text" name="Price5" id="Price5" readonly size=1 /> </td>
+
+                        <td> <select name="Quantity5"  id="Quantity5" onchange="sub(this,5);" disabled>
+                            <script type="text/javascript">
+                                quantity();
+                            </script>
+                            </select> 
+                        </td>
+
+                        <td> <input type="text" name="Amount5" id="Amount5" size=1 class=numbers  value="0.00"  onchange="calculate();" disabled  /> </td>
+                    </tr>
+
+                    <!--CAKES-->
+                    <tr class="cakes" height="90">
+                        <td>CAKES <br/>
+                            <select id="desc6" name="desc6" onchange="display(this,6);">
+                                <option value="0.00">NONE </option>
+                                <option value="15.00">Black Forest</option>
+                                <option value="12.00">Tiramisu</option>
+                                <option value="13.00">Burnt Cheececake</option>
+                            </select>
+                        </td>
+
+                        <td> <input type="text" name="Price6" id="Price6" readonly size=1 /> </td>
+
+                        <td> <select name="Quantity6"  id="Quantity6" onchange="sub(this,6);" disabled>
+                            <script type="text/javascript">
+                                quantity();
+                            </script>
+                            </select>  
+                        </td>
+
+                        <td> <input type="text" name="Amount6" id="Amount6" size=1 class=numbers  value="0.00"  onchange="calculate();" disabled  /> </td>
+                    </tr>
+
+                    <tr class="snacks" height="90">
+                        <td>PASTRIES <br/>
+                            <select id="desc7" name="desc7" onchange="display(this,7);">
+                                <option value="0.00">NONE </option>
+                                <option value="4.00">Apple Pie </option>
+                                <option value="5.00">Cereal Bread</option>
+                                <option value="9.50">Chicken Slide and Cheese Croissant</option>
+                                <option value="6.00">Curry Chicken Wrap</option>
+                            </select>
+                        </td>
+
+                        <td> <input type="text" name="Price7" id="Price7" readonly size=1 /> </td>
+
+                        <td>  <select name="Quantity7"  id="Quantity7" onchange="sub(this,7);" disabled>
+                            <script type="text/javascript">
+                                quantity();
+                            </script>
+                            </select>   
+                        </td>
+
+                        <td> <input type="text" name="Amount7" id="Amount7" size=1 class=numbers  value="0.00"  onchange="calculate();" disabled  />  </td>
+
+                    </tr>
+
+                    <!--LIMIT-->
+                    <tr class="limit" height="90">
+                        <td>LIMITED TIME <br/>
+                            <select id="desc8" name="desc8" onchange="display(this,8);">
+                                <option value="0.00">NONE </option>
+                                <option value="8.50">Honey Latte</option>
+                                <option value="12.00">Honey Sparkling Americano</option>
+                            </select>
+                        </td>
+                        
+                        <td> <input type="text" name="Price8" id="Price8" readonly size=1 /> </td>
+                       
+                        <td> <select name="Quantity8"  id="Quantity8" onchange="sub(this,8);" disabled>
+                            <script type="text/javascript">
+                                quantity();
+                            </script>
+                            </select>
+                          </td>
+
+                          <td> <input type="text" name="Amount8" id="Amount8" size=1 class=numbers  value="0.00"  onchange="calculate();" disabled /> </td>
+
+                    </tr>
+
+                    <tr>
+                        <td align="right" width="100" colspan="2"> Total Amount: RM </td> 
+                        <td width="70"> <input type="text" name="totalAmount" id="totalAmount" size="1" value="0.00" disabled/> </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+ 
+        <!--Checkout Button-->
+
+        <br/>
+        <br/>
+
+        <div class="total">
+            
+                <div class="checkouttotal"  >
+                <a href="delivery.html" class="linkcheckout" >
+                    CHECKOUT </a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--FOOTER-->
+
+    <br/><br/><br/>
+
+    <footer>
+        
+        <div class="footer">
+            <div class="footer-left">
+                <img src="logo circle.png" alt="Jumpstart Coffee Shop">
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Jumpstart Coffee Shop</h3>
+                <p class="footer-links">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="coffee_shop.html">Home</a>
+                |
+                <a href="about_us.html">About Us</a>
+                |
+                <a>Contact</a>
+                |
+                <a href="faq.html">FAQ</a>
+            </p>
+
+            <p class="footer-copyright">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright 2022 <strong>Jumpstart Coffee Shop</strong> all rights reserved</p>
+
+            </div>
+            <div class="footer-center">
+                <p class="footer-cafe-about">
+                  <span >About the Coffee Shop</span><br><br>
+                  <strong>Jumpstart Coffee </strong>uses the premium quality ingredients to serve our customers the best coffee. All of our coffees and 
+                  syrups are made with all natural ingredients with no chemicals or preservatives ensuring you the highest quality in taste and health. 
+                  JUMPSTART also provides paper straws and eco-friendly cups that are reusable. We love to share a positive impact with our customers.
+                </p>
+              </div>
+  
+
+            <div class="footer-right">
+                <h3>Quick Links</h3>
+                <p>
+                    <h4>Contact</h4>
+                    <a href="mailto:jumpstartcoffeeshop22@gmail.com">Email : jumpstartcoffeeshop22@gmail.com</a><br><br>
+                    <a href="menu.html">Menu</a><br><br>
+                    <a href="product_delivery.html">Product Delivery</a><br><br>
+                    <a href="membership.html">Membership</a><br><br>
+                    <a href="customer_feedback.html">Feedback</a>
+                    <h3>Address</h3>
+                    <address>A-G-15, DATARAN, 1, Jalan PU 20/1, <br>Taman Puchong Utama, 47140 Puchong, Selangor</address>
+                </p>
+            </div>
+
+        
+        </div>
+
+        
+    </footer>
+
+
+</body>
+</html>

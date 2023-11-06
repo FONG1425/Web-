@@ -1,0 +1,102 @@
+body {
+    
+    padding:0%;
+    margin:0%;
+}
+
+.yourcart {
+    text-align: center;
+    font-size: 40px;
+    font-weight:bold;
+    font-family:monospace;
+}
+
+.tablebig{
+    text-align: center;
+    
+}
+
+.table {
+    margin:auto;
+    width: 70%;   
+    border-spacing: 0px 5px;
+    
+}
+
+thead.thead {
+
+    background-color: #a3bfe9;
+    border:1px solid #a3bfe9;
+     
+}
+
+th.text {
+    color:white;
+    font-weight: bold;
+}
+
+
+tr.signature {
+    background-color: #e0e6e9;
+   
+}
+
+tr.coffee {
+    background-color: #e0e6e9;
+}
+
+tr.frappe {
+    background-color: #e0e6e9;
+}
+
+tr.choco {
+    background-color: #e0e6e9;
+}
+
+tr.refesher {
+    background-color: #e0e6e9;
+}
+
+tr.cakes {
+    background-color: #e0e6e9;
+}
+
+tr.snacks {
+    background-color: #e0e6e9;
+}
+
+tr.limit {
+    background-color: #e0e6e9;
+}
+
+
+
+
+
+
+
+
+
+
+/*the checkout total box*/
+.total {
+    margin:auto;
+    width:25%
+}
+
+
+.checkouttotal {
+    height: 25px;
+    width:40%;
+    background-color: #6677d2;
+    text-align: center;
+    margin:auto;
+    border-radius: 15px;
+    
+}
+
+a.linkcheckout {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}

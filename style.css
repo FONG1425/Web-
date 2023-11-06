@@ -1,0 +1,536 @@
+.active {
+    background-color: #828994;
+}
+
+article {
+    background-color: #e0e6ef;
+    display: block;
+    height:4000px;
+}
+
+.a1{
+    background-color: #e0e6ef;
+    display: block;
+    height:2900px;
+}
+
+.vertical-menu{
+    width: 20%;
+}
+
+.drinks_layout {
+    background-color: #e0e6ef;
+    width: 80%;
+}
+
+.vertical-menu, .drinks_layout {
+    display:block;
+    float: left;
+}
+
+.vertical-menu a{
+    background-color:white;
+    color:white;
+    display:block;
+    padding:12px;
+    padding-right:0px;
+    text-decoration:none;
+    text-align:center;
+
+}
+
+.vertical-menu a.active{
+    background-color:#828994;
+    color:white;
+}
+.vertical-menu a.menu {
+    text-align:left;
+    font-size:18px;
+    font-family:"Franklin Gothic Medium";
+    color:#2e3a7a;
+}
+
+.vertical-menu a.drinks {
+    text-align:left;
+    font-size:18px;
+    font-family:"Franklin Gothic Medium";
+    color:#2e3a7a;
+    
+}
+
+.vertical-menu a.drinks:hover  {
+    color:#828994;
+}
+
+.vertical-menu a.food{
+    text-align:left;
+    font-size:18px;
+    font-family:"Franklin Gothic Medium";
+    color:#2e3a7a;
+}
+
+.vertical-menu a.food:hover {
+    color:#828994;
+}
+
+.vertical-menu a.classic {
+    text-align:left;
+    font-family:"Bahnschrift SemiBold";
+    color:black
+}
+
+.vertical-menu a.classic:hover {
+    color:#828994;
+}
+
+.americano, .black-sugar-latte, .honey-latte, .iced-latte, .macha-latte, .mocha, .cappuccino, .caramel-macchiato, .chocolate, .coconut-frappe, .frappecino, .honey-sparkling-americano, .mango-smoothie, .roasted-hazelnut-chocolate, .signature-chocolate-frappe, .burnt-cheese-cake, .apple-pie, .cereal-bread, .croissant, .wrap{
+    width:150px;
+    height:250px;
+    padding:8px;
+}
+
+.about_us_story {
+    text-align:center;
+    font-size:30px;
+    color:#2e3a7a
+}
+
+.food_tiramisu,.food_cbread,.food_applepie,.drink_americano ,.drink_cappucino,.drink_bslatte,.drink_chocolate,.drink_coconut,.drink_frapeccino,.drink_hlatte,.drink_hsamericano,.drink_latte,.drink_mlatte,.drink_msmoothie,.drink_mocha,.drink_rhchocolate,.drink_cfrappe {
+    margin: 15px 14px 0px 0px;
+    padding:5px 10px 15px 10px;
+    box-sizing:border-box;
+    border-radius:8px;
+    border:3px #fff solid;
+    float:left;
+    background-color:#fff;
+    max-height:380px;
+    min-width:257px;
+    max-width:257px;
+    
+} 
+
+.food_bccake ,.food_csaccroissant,.food_bforest,.food_ccwrap,.drink_cmacchiato{
+    margin: 15px 14px 0px 0px;
+    padding:5px 10px 18px 10px;
+    box-sizing:border-box;
+    border-radius:8px;
+    border:3px #fff solid;
+    float:left;
+    background-color:#fff;
+    min-width:259px;
+    max-width:262px;
+    max-height:380px;
+}
+
+
+.food_tiramisu .t,.food_bforest .bf,.food_ccwrap .ccw,.food_csaccroissant .csacc,.food_applepie .ap,.food_cbread .cb,.food_bccake .bcc{
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+    max-width:120px;
+    min-height:148px;
+    max-height:148px;
+    cursor:pointer;
+    
+}
+
+.drink_americano .a,.drink_cappucino .c, .drink_bslatte .bsl,.drink_cmacchiato .cm,.drink_chocolate .c1,.drink_coconut .cf,.drink_frapeccino .f,.drink_hlatte .hl,.drink_hsamericano .hsa,.drink_latte .l,.drink_mlatte .ml,.drink_msmoothie .ms,.drink_mocha .m,.drink_rhchocolate .rhc,.drink_cfrappe .cf{
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+    max-width:120px;
+    max-height:200px;
+    cursor:pointer;
+}
+
+.food_tiramisu h3,.food_bforest h3,.food_ccwrap h3,.food_csaccroissant h3,.food_bccake h3,.food_cbread h3,.food_applepie h3,.drink_americano h3,.drink_cappucino h3,.drink_bslatte h3,.drink_cmacchiato h3,.drink_chocolate h3,.drink_coconut h3,.drink_frapeccino h3,.drink_hlatte h3,.drink_hsamericano h3,.drink_latte h3,.drink_mlatte h3,.drink_msmoothie h3,.drink_mocha h3,.drink_rhchocolate h3,.drink_cfrappe h3{
+    border-bottom: 2px solid black;
+    text-align:center;
+    
+}
+.food_tiramisu h4,.food_bforest h4,.food_ccwrap h4,.food_csaccroissant h4,.food_bccake h4,.food_cbread h4,.food_applepie h4,.drink_americano h4,.drink_cappucino h4,.drink_bslatte h4, .drink_cmacchiato h4,.drink_chocolate h4,.drink_coconut h4,.drink_frapeccino h4,.drink_hlatte h4,.drink_hsamericano h4,.drink_latte h4,.drink_mlatte h4,.drink_msmoothie h4,.drink_mocha h4,.drink_rhchocolate h4, .drink_cfrappe h4{
+    text-align:left;
+    display:block;
+    font-size:18px;
+}
+
+.drink_americano p img ,.drink_bslatte p img , .drink_cappucino p img , .drink_cfrappe p img, .drink_chocolate p img, .drink_cmacchiato p img , .drink_coconut p img , .drink_frapeccino p img, .drink_hlatte p img , .drink_hsamericano p img , .drink_latte p img, .drink_mlatte p img, .drink_mocha p img , .drink_msmoothie p img , .drink_rhchocolate p img {
+    float:right;
+    padding:0 5px;
+}
+
+.about_us_story
+{
+    margin:0%;
+    padding:20px;
+    background-color:#e0e6ef;
+}
+.img_b{
+    background-color:#fff;
+    border:0px solid #fff;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.img_b:hover{
+    transform:scale(1.0);
+    opacity: 0.8;
+}
+
+.box{
+    display:none;
+    position:fixed;
+    border:3px solid #2e3a7a;
+    top:50%;
+    transform:translate(-50%,-50%);
+    left:50%;
+    width:500px;
+    height:690px;
+    background-color:#fff;
+    border-radius:10px;
+}
+
+.des_menu{
+    display:block;
+    margin-top:0px;
+    margin-left:auto;
+    margin-right:auto;
+    width:130px;
+    height:208px
+}
+.ingredients {
+    font-size:14px;
+    float:left;
+    padding-left:50px;
+    padding-right:0;
+    padding-top:0px;
+    padding-bottom:0;
+}
+
+.ingredients h4 {
+    font-size:15px;
+    text-align:center;
+}
+
+.x{
+    background-color:#2e3a7a;
+    margin-left:460px;
+    margin-top:15px;
+    font-weight:bold;
+    color:#fff;
+    border:0px solid #fff;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.x:hover{
+    color:#fff;
+    background-color:#828994;
+}
+
+
+.kcal{
+    float:right;
+    padding-right:80px;
+    font-size:14px;
+    
+}
+
+.kcal h4{
+    font-size:15px;
+    text-align:center
+}
+
+.p{
+    font-size:15px;
+    box-sizing:border-box;
+    color:#fff;
+    background-color:#2e3a7a;
+    margin:5.5px;
+    padding:3px;
+    border-radius:10px;
+}
+
+.choose {
+    float:left;
+    padding-top:10px;
+    padding-left:30px;
+}
+
+.price {
+    display:block;
+    text-align:left;
+    padding-left:35px;
+    padding-top:160px;
+}
+.quantity{
+margin-top:10px;
+width:60px;
+font-size:13px;
+float:right;
+margin-left:30px;
+border:2px solid black;
+}
+
+.d_atc{
+    background-color:#2e3a7a;
+    border:0px;
+    color:#fff;
+    text-align:center;
+    cursor:pointer;
+    float:right;
+    display:block;
+    border-radius:5px;
+    margin-top:0px;
+    margin-right:20px;
+    margin-bottom:50px;
+    padding:7px 10px;
+    font-size:13.5px;    
+}
+
+.d_atc:hover{
+    color:#fff;
+    background-color:#828994;
+}
+
+.choose1{
+    padding-top:127px;
+    padding-left:35px;
+}
+
+.price1{
+    float:left;
+    padding-left:35px;
+    padding-top:0px;
+}
+
+.quantity1{
+width:60px;
+font-size:13px;
+margin-left:20px;
+border:2px solid black;
+}
+
+.d_atc1{
+    background-color:#2e3a7a;
+    border:0px;
+    color:#fff;
+    text-align:center;
+    cursor:pointer;
+    display:block;
+    border-radius:5px;
+    font-size:13.5px;  
+    padding:7px 10px;
+    margin-left:400px;
+    margin-top:33px;
+}
+
+.d_atc1:hover{
+    color:#fff;
+    background-color:#828994;
+}
+.p1{
+    font-size:15px;
+    box-sizing:border-box;
+    color:#fff;
+    background-color:#2e3a7a;
+    margin:5.5px;
+    padding:2px;
+    border-radius:10px;
+}
+
+.choose2{
+    padding-top:163px;
+    padding-left:35px;
+}
+
+.d_atc2{
+    background-color:#2e3a7a;
+    border:0px;
+    color:#fff;
+    text-align:center;
+    cursor:pointer;
+    display:block;
+    border-radius:5px;
+    font-size:13.5px;  
+    padding:7px 10px;
+    margin-left:400px;
+    margin-top:20px;
+}
+
+.d_atc2:hover{
+    color:#fff;
+    background-color:#828994;
+}
+
+.choose3{
+    padding-top:130px;
+    padding-left:35px;
+}
+
+.quantity3{
+    width:60px;
+font-size:13px;
+margin-left:20px;
+border:2px solid black;
+}
+
+.price3{
+    float:left;
+    padding-left:35px;
+    padding-top:0px;
+    margin-top:10px;
+}
+
+.d_atc3{
+    background-color:#2e3a7a;
+    border:0px;
+    color:#fff;
+    text-align:center;
+    cursor:pointer;
+    display:block;
+    border-radius:5px;
+    font-size:13.5px;  
+    padding:7px 10px;
+    margin-left:400px;
+    margin-top:30px;
+}
+
+.d_atc3:hover{
+    color:#fff;
+    background-color:#828994;
+}
+
+.carticon{
+width:20px;
+padding-right:5px;
+}
+
+.feedback{
+    text-align:center;
+}
+
+input[type=text], select, textarea {    
+    width: 70%;    
+    padding: 12px;    
+    border: 1px solid rgb(70, 68, 68);    
+    border-radius: 4px;    
+    resize: vertical;    
+  }    
+  input[type=email], select, textarea {    
+    width: 70%;    
+    padding: 12px;    
+    border: 1px solid rgb(70, 68, 68);    
+    border-radius: 4px;    
+    resize: vertical;    
+  }    
+      
+  label {    
+    padding: 12px 12px 12px 40px;    
+    display: inline-block; 
+
+  }    
+.feedback_container{
+    background-color:#e0e6ef;
+}
+  input[type=email] {
+    background-color: white;
+  }
+
+  input[type=submit] {    
+    background-color: #2e3a7a;  
+    color: white;    
+    padding: 12px 20px;    
+    border: none;    
+    border-radius: 4px;    
+    cursor: pointer;    
+    float: right;    
+    margin-right:120px;
+    margin-top:15px;
+    margin-bottom: 15px;
+  }    
+    
+
+  input[type=submit]:hover {    
+    background-color: #828994  
+  }    
+      
+  .container {    
+    border-radius: 5px;    
+    background-color:#fff;
+    padding: 20px;    
+  }    
+      
+  .col-25 {    
+    float: left;    
+    width: 25%;    
+    margin-top: 6px;    
+  }    
+      
+  .col-75 {    
+    float: left;    
+    width: 75%;    
+    margin-top: 6px;    
+  }    
+      
+  
+  .row:after {    
+    content: "";    
+    display: table;    
+    clear: both;    
+  }  
+  
+  .bodyfeedback{
+    background-color:#fff;
+    
+  }
+
+  .feedback{
+    background-color:#fff;
+  }
+
+  .afeedback{
+    background-color:#fff;
+    height:1500px;
+  }
+    
+  .bb{
+    box-sizing:border-box;
+    border:5px solid #2e3a7a;
+
+    margin:100px;
+    margin-right:150px;
+    margin-left:150px;
+    border-radius:15px;
+  }
+
+  .price12{
+    float:left;
+    padding-left:35px;
+    padding-top:0px;
+    margin-top:0px;
+  }
+
+  .d_atc12{
+    background-color:#2e3a7a;
+    border:0px;
+    color:#fff;
+    text-align:center;
+    cursor:pointer;
+    display:block;
+    border-radius:5px;
+    font-size:13.5px;  
+    padding:7px 10px;
+    margin-left:400px;
+    margin-top:0px;
+}
+
+.d_atc12:hover{
+    color:#fff;
+    background-color:#828994;
+}
+
+.choose13{
+    padding-left:35px;
+}

@@ -1,0 +1,77 @@
+.text1, .text2, .text3, .text4, .text5, .text6, .text7, .text8 {
+    display: block;
+    float: left;
+    width: 60%;
+    border: #74dcff dotted 5px;
+}
+
+article .img{
+    display: block;
+    float: right;
+    width: 31%;
+    margin-right: 60px;
+}
+
+div#img1, div#img2{
+    text-align: center;
+    color: rgb(0, 115, 255);
+}
+
+img#locationimg{
+    width: 1000px;
+    height: 600px;
+    display: block;
+    float: right;
+}
+
+.map {
+    display: block;
+    height: 600px;
+}
+
+article {
+    background-color: white;
+    animation-name: example;
+    animation: example 5s infinite;
+}
+
+@keyframes example {
+    0% {background-color: white;}
+    50% {background-color: #e6f2ff;}
+    100% {background-color: white;}
+}
+
+
+
+video {
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.outlet {
+    display: block;
+    width: 100%;
+    margin-left: 15px;
+    height: 320px;
+}
+
+.outlet div {
+    display: block;
+    float:left;
+    width:30%;
+    padding-left: 15px;
+    border-radius: 10px;
+}
+
+.outlet p img {
+    width: 259px;
+    height: 135px;
+    border-radius: 5px;
+}
+
+div.text {
+    border: 5px dashed #2e3a7a;
+    margin: 10px;
+}

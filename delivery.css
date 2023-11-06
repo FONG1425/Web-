@@ -1,0 +1,50 @@
+.title{
+    font-weight: bold; 
+    color: #2e3a7a; 
+    text-align: center;
+}
+
+form#delivery{
+    background-color: white;
+    border: 1px solid #2e3a7a;
+    border-radius: 15px;
+    width: 700px;
+    height: 670px;
+    margin: auto;
+}
+
+input[type=radio]{
+    color: #2e3a7a;
+}
+
+
+.service{
+    font-size: 16px;
+    text-align: center;
+}
+
+fieldset{
+    width: 500px;
+    padding: auto;
+    height: 150px;
+    margin: auto;
+    background-color: #d0e6fb;
+    border-radius: 15px;
+    border: #2e3a7a;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+legend{
+    background-color: #2e3a7a;
+    color: white;
+    height: 20px;
+    width: 120px;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+input[type=submit]{
+    margin-left: 63%;
+    
+}
